@@ -1,5 +1,5 @@
 .uit-share {
-    margin: 0;
+    margin: 6px 0;
     padding: 0;
     list-style: none;
     overflow: hidden;
@@ -11,20 +11,21 @@
     border-radius: 20px;
     float: left;
     margin-right: 4px;
-    border: 1px solid $c-red;
+    border: 1px solid $c-yellow;
 
     .uit-icon {
-        fill: $c-red;
+        fill: $c-black;
         width: 100%;
         height: 100%;
         margin: auto;
     }
 
     &:hover {
-        background-color: $c-red;
+        background-color: $c-yellow;
+        border-color: $c-yellow;
 
         .uit-icon {
-            fill: $c-white;
+            fill: $c-black;
         }
     }
 }
