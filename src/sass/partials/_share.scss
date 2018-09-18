@@ -3,6 +3,11 @@
     padding: 0;
     list-style: none;
     overflow: hidden;
+
+    @include mq(leftCol) {
+        position: absolute;
+        margin: 12px 0;
+    }
 }
 
 .uit-share__button {

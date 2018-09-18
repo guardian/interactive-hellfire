@@ -3,12 +3,16 @@
         @include bodyCopy();
         margin-bottom: 18px;
     }
+
+    .uit-content {
+        padding-top: 12px;
+    }
 }
 
 .uit-drop {
     @include dropCap(4);
     font-weight: bold;
-    color: $c-red;
+    color: $c-yellow;
 }
 
 .uit-subhead {
