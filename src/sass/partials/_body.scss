@@ -2,6 +2,18 @@
     p {
         @include bodyCopy();
         margin-bottom: 18px;
+        color: $c-black;
+
+        a {
+            color: $c-black;
+            border-bottom: 1px solid $c-yellow;
+            transition: all 0.2s linear;
+
+            &:hover {
+                color: $c-yellow;
+                border-bottom-color: $c-yellow;
+            }
+        }
     }
 
     .uit-content {
