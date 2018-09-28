@@ -1,7 +1,7 @@
 @mixin bodyCopy {
     font-family: 'Guardian Text Egyptian Web';
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 @mixin dropCap($size) {
@@ -11,11 +11,11 @@
     font-family: 'Guardian Egyptian Web';
     line-height: .6;
     text-transform: uppercase;
-    height: $size * 22px;
+    height: $size * 27px;
 
     &__inner {
-        font-size: $size * 26px;
-        line-height: 0.79;
+        font-size: $size * 32px;
+        line-height: 0.76;
     }
 }
 

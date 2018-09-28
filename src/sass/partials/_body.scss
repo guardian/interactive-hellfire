@@ -1,7 +1,8 @@
 .uit-body {
     p {
         @include bodyCopy();
-        margin-bottom: 18px;
+        padding-bottom: 30px;
+        margin: 0;
         color: $c-black;
 
         a {
@@ -23,16 +24,131 @@
 
 .uit-drop {
     @include dropCap(4);
-    font-weight: bold;
+    font-weight: 900;
     color: $c-yellow;
 }
 
-.uit-subhead {
-    @include banding($c-yellow);
-    font-size: 28px;
-    font-weight: bold;
+.uit-divider {
+    position: relative;
 }
 
-.uit-button {
-    @include button($c-white, $c-red);
+.uit-images__image {
+    display: block;
+    margin-right: 4px;
+    width: 100%;
+
+    @include mq(tablet) {
+        margin-right: 20px;
+    }
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
+
+.uit-caption {
+    position: relative;
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 4px 0;
+    font-family: 'Guardian Sans Web';
+    color: $c-dark-grey;
+    text-indent: 1.1em;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        margin-top: 2px;
+        border-left: transparent .4em solid;
+        border-right: transparent .4em solid;
+        border-bottom: $c-yellow .8em solid;
+    }
+}
+
+.uit-divider--1 {
+    .uit-images {
+        @include mq(desktop) {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            grid-gap: 20px;
+        }
+
+        @include mq(leftCol) {
+            grid-template-columns: 1fr 380px;
+        }
+    }
+
+    .uit-images__image--1 {
+        margin-left: -10px;
+        width: calc(100% + 20px);
+
+        @include mq(mobileLandscape) {
+            margin-left: -20px;
+            width: calc(100% + 40px);
+        }
+
+        @include mq(tablet) {
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+
+    .uit-images__image--2 {
+        display: none;
+
+        @include mq(desktop) {
+            display: block;
+        }
+    }
+
+    .uit-captions {
+        @include mq(desktop) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            width: 300px;
+            border-top: 1px solid $c-light-grey;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        @include mq(leftCol) {
+            width: 380px;
+        }
+    }
+
+    .uit-caption {
+        @include mq(desktop) {
+            padding-bottom: 0;
+            margin-bottom: -5px;
+        }
+    }
+
+    .uit-caption--1 {
+        @include mq(desktop) {
+            &:before {
+                transform: rotate(-90deg);
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: -10px;
+                bottom: 4px;
+                background-color: $c-light-grey;
+                width: 1px;
+            }
+        }
+    }
+
+    .uit-caption--2 {
+        display: none;
+
+        @include mq(desktop) {
+            display: block;
+        }
+    }
 }

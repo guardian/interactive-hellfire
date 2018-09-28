@@ -28,6 +28,7 @@
 .uit-header__image,
 .uit-header__video {
     width: 100%;
+    display: block;
 
     @include mq($until: tablet) {
         width: 200%;
