@@ -1,4 +1,6 @@
 .uit-body {
+    background-color: $c-white;
+
     p {
         @include bodyCopy();
         padding-bottom: 30px;
