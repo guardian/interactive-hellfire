@@ -2,6 +2,12 @@
     position: relative;
     overflow: hidden;
     background-color: $c-grey;
+    height: 0;
+    padding-top: 84.375%;
+
+    @include mq(tablet) {
+        padding-top: 42.1875%;
+    }
 
     .uit-container {
         position: absolute;
@@ -28,6 +34,8 @@
 
 .uit-header__image,
 .uit-header__video {
+    position: absolute;
+    top: 0;
     width: 100%;
     display: block;
 
