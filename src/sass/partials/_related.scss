@@ -65,9 +65,16 @@
     color: $c-black;
     border-top: 1px solid $c-red;
     width: calc(50% - 10px);
+    margin-bottom: 12px;
+    background-color: $c-off-white;
 
     @include mq(tablet) {
         width: calc(25% - 15px);
+    }
+
+    &:hover {
+        text-decoration: none;
+        background-color: $c-light-grey;
     }
 }
 
@@ -84,11 +91,9 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    background-color: $c-off-white;
 
     &:hover {
         text-decoration: none;
-        background-color: $c-light-grey;
     }
 }
 
