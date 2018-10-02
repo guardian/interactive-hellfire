@@ -24,6 +24,22 @@
     }
 }
 
+.uit-imperial,
+.uit-metric {
+    display: none;
+    border-bottom: dashed 1px $c-yellow;
+
+    &:hover {
+        cursor: pointer;
+        border-bottom-color: $c-black;
+    }
+}
+
+.uit.imperial .uit-imperial,
+.uit.metric .uit-metric {
+    display: inline;
+}
+
 .uit-drop {
     @include dropCap(4);
     font-weight: 900;

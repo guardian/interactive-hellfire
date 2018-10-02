@@ -2,5 +2,7 @@
 window.$ = require('./vendor/jquery.js');
 
 var share = require('./modules/share.js');
+var temps = require('./modules/temps.js');
 
 share.init();
+temps.init();
