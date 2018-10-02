@@ -15,6 +15,7 @@
 }
 
 .uit-related__title {
+    margin: 0;
     font-family: 'Guardian Egyptian Web';
     font-size: 22px;
     line-height: 1.1;
@@ -67,6 +68,7 @@
     width: calc(50% - 10px);
     margin-bottom: 12px;
     background-color: $c-off-white;
+    text-decoration: none;
 
     @include mq(tablet) {
         width: calc(25% - 15px);
