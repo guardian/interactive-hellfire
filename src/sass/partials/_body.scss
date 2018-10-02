@@ -126,7 +126,7 @@
 }
 
 .uit-image--2,
-.uit-image--3 {
+.uit-image--2 .uit-image__image {
     display: none;
 
     @include mq(desktop) {
