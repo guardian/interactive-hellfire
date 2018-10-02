@@ -152,6 +152,10 @@ p.uit-image__caption {
         margin: 0;
     }
 
+    @include mq(desktop) {
+        padding-top: 6px;
+    }
+
     &:before {
         content: '';
         position: absolute;
@@ -192,6 +196,7 @@ p.uit-image__caption {
                 right: 0;
                 bottom: -8px;
                 width: 300px;
+                margin-top: 6px;
 
                 &:before {
                     transform: rotate(-90deg);
@@ -199,7 +204,7 @@ p.uit-image__caption {
             }
 
             @include mq(wide) {
-                width: 380px;
+                right: 80px;
             }
         }
     }
@@ -215,6 +220,12 @@ p.uit-image__caption {
 
         @include mq(wide) {
             grid-column: 12 / 17;
+        }
+    }
+
+    .uit-image__caption {
+        @include mq(desktop) {
+            width: 300px;
         }
     }
 }
@@ -233,30 +244,10 @@ p.uit-image__caption {
             grid-column: 2 / 14;
         }
     }
-}
 
-.uit-divider--3 {
-    .uit-image--2 {
+    .uit-image__caption {
         @include mq(desktop) {
-            grid-column: 1 / 5;
-        }
-
-        @include mq(wide) {
-            grid-column: 1 / 6;
-        }
-    }
-
-    .uit-image--1 {
-        @include mq(desktop) {
-            grid-column: 5 / 13;
-        }
-
-        @include mq(leftCol) {
-            grid-column: 5 / 15;
-        }
-
-        @include mq(wide) {
-            grid-column: 6 / 17;
+            padding-right: 140px;
         }
     }
 }
@@ -287,6 +278,12 @@ p.uit-image__caption {
 
         @include mq(wide) {
             grid-column: 9 / 17;
+        }
+    }
+
+    .uit-image__caption {
+        @include mq(desktop) {
+            padding-right: 80px;
         }
     }
 }
